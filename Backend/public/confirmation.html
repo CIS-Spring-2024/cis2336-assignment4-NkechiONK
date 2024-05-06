@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Liberty University | Cafeteria</title>
+    <link rel="stylesheet" href="../css/confirmation.css">
+    <link rel="stylesheet" href="../java/javaorder.js">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 200px;
+    background-color: black;
+    color: rgba(127, 255, 212, 0.925);;
+}
+p1,
+p2 {
+            font-size: 1.2em; 
+            font-weight: bold; 
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.navbar .menu-links{
+    display: flex;
+    gap: 40px;
+    font-size: larger;
+}
+.navbar a{
+    color:rgba(127, 255, 212, 0.925);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.navbar a:hover{
+    color: rgba(127, 255, 212, 0.925);
+}
+.her-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.her-section .content{
+    color: rgba(127, 255, 212, 0.925);
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.her-section .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+}
+.her-section .content p{
+    max-width: 600px;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: medium;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">LIBERTY ARTS UNIVERSITY</a>
+            <ul class="menu-links">
+                <li><a href="../html/order.html">MENU</a></li>
+                <li><a href="../html/contactpage.html">CONTACT</a></li>
+                <li><a href="../html/Biography.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1> Order Confirmation</h1>
+    <br>
+    <br>
+    <br>
+    <p1><span id="totalCost"></span></p1>
+    <br>
+    <br>
+    <p3>Thank You!</p3>
+    <br>
+    <br>
+    <p2>Your order has been taken and will be ready for pickup</p2>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const totalCost = urlParams.get('totalAmount');
+            document.getElementById('totalAmount').textContent = totalCost;
+        });
+    </script>
+</body>
+</html>

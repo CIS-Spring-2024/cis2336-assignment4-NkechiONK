@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: rgb(20, 19, 19);
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align body content to the top */
+    align-items: center;
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar .menu-links {
+    display: flex;
+    gap: 40px;
+    font-size: larger;
+}
+
+.navbar a {
+    color: rgba(127, 255, 212, 0.925);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: rgba(127, 255, 212, 0.925);
+}
+
+main {
+    margin-top: 100px; /* Adjust to move the content lower */
+    padding-top: 50px; /* Adjust if necessary */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact p{
+    font-size: 20px;
+}
+.contact form label,
+.contact form input,
+.contact form textarea {
+    margin-bottom: 20px; /* Increased space between elements */
+    font-size: 25px; /* Increased font size */
+    width: 80%; /* Set width of input elements */
+    max-width: 500px; /* Max width of input elements */
+}
+
+.contact form textarea {
+    height: 150px; /* Increased height of text area */
+}
+
+.contact form button {
+    margin-top: 20px; /* Increased space above button */
+    font-size: 18px; /* Increased font size */
+    padding: 10px 20px; /* Increased padding for button */
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: 100vh;
+    background: url("../images/food7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.navbar .menu-links{
+    display: flex;
+    gap: 40px;
+    font-size: larger;
+}
+.navbar a{
+    color:rgba(127, 255, 212, 0.925);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.navbar a:hover{
+    color: rgba(127, 255, 212, 0.925);
+}
+.her-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.her-section .content{
+    color: rgba(127, 255, 212, 0.925);
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.her-section .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+}
+.her-section .content p{
+    max-width: 600px;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: medium;
+}

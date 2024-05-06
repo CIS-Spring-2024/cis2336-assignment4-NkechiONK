@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Restaurant Name</title>
+    <link rel="stylesheet" href="../css/contactpage.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">LIBERTY ARTS UNIVERSITY</a>
+        <ul class="menu-links">
+            <li><a href="../html/order.html">MENU</a></li>
+            <li><a href="../html/contactpage.html">CONTACT</a></li>
+            <li><a href="../html/Biography.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <br>
+        <br>
+        <p>We'd love to hear from you. Fill out the form below to get in touch with us.</p>
+        <form id="contactForm" action="send_email.php" method="POST">
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br>
+
+            <button type="submit" id="sendMessageBtn">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <br>
+    <p>&copy; Bistro Africain. Contact Us.</p>
+</footer>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Simulate sending message
+        alert("Your message was sent.");
+    });
+</script>
+
+</body>
+</html>
